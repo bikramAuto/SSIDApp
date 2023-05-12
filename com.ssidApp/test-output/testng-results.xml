@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-28T14:08:54 IST" name="Default suite" finished-at="2023-04-28T14:09:16 IST" duration-ms="22488">
+    <groups>
+    </groups>
+    <test started-at="2023-04-28T14:08:54 IST" name="Default test" finished-at="2023-04-28T14:09:16 IST" duration-ms="22488">
+      <class name="com.ssid.base.Base">
+        <test-method is-config="true" signature="Excel()[pri:0, instance:com.ssid.base.Base@79e4c792]" started-at="2023-04-28T14:08:54 IST" name="Excel" finished-at="2023-04-28T14:09:00 IST" duration-ms="6522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Excel -->
+        <test-method signature="mailNesia()[pri:0, instance:com.ssid.base.Base@79e4c792]" started-at="2023-04-28T14:09:00 IST" name="mailNesia" finished-at="2023-04-28T14:09:16 IST" duration-ms="15929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailNesia -->
+      </class> <!-- com.ssid.base.Base -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
