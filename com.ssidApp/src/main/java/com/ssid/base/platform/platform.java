@@ -95,7 +95,7 @@ public class platform {
 		
 		if (os.equals("Windows")) {
 			String userHome = System.getProperty("user.home");
-			filePath = userHome + File.separator + "Desktop" + File.separator
+			filePath = userHome + File.separator + "OneDrive" + File.separator + "Desktop" + File.separator
 					+ "Test_Android" + File.separator + "Book.xlsx";
 			
 		}else {			
@@ -103,9 +103,7 @@ public class platform {
 			filePath = userHome + File.separator + "Desktop" + File.separator
 					+ "Test_Android" + File.separator + "Book.xlsx";
 			
-		}
-		
-		
+		}		
 		File inputStream = new File(filePath);
 		System.out.println("file parh: "+inputStream);
 		Workbook workbook = new XSSFWorkbook(inputStream);
