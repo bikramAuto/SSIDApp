@@ -87,12 +87,10 @@ public class platform {
 
 	@SuppressWarnings("resource")
 	@BeforeTest
-	public void Excel() throws IOException, InvalidFormatException {
-		
+	public void Excel() throws IOException, InvalidFormatException {		
 		os = System.getProperty("os.name");
 		os = os.replaceAll("[^a-zA-Z]", "");
-		System.out.println("os: "+os);
-		
+		System.out.println("os: "+os);		
 		if (os.equals("Windows")) {
 			String userHome = System.getProperty("user.home");
 			filePath = userHome + File.separator + "OneDrive" + File.separator + "Desktop" + File.separator
