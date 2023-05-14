@@ -598,10 +598,4 @@ public class Base extends Devices {
 	}
 	
 	
-	//gvuyuy
-	//test
-	// test
-	
-	
-	
 }

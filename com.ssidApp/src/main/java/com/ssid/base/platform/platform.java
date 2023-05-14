@@ -79,6 +79,8 @@ public class platform {
 	protected int pp;
 	protected int id;
 	protected int fx;
+	protected String os;
+	protected String filePath;
 	
 	
 	public String acType;
@@ -86,9 +88,24 @@ public class platform {
 	@SuppressWarnings("resource")
 	@BeforeTest
 	public void Excel() throws IOException, InvalidFormatException {
-		String userHome = System.getProperty("user.home");
-		String filePath = userHome + File.separator + "Desktop" + File.separator
-				+ "Test_Android" + File.separator + "Book.xlsx";
+		
+		os = System.getProperty("os.name");
+		os = os.replaceAll("[^a-zA-Z]", "");
+		System.out.println("os: "+os);
+		
+		if (os.equals("Windows")) {
+			String userHome = System.getProperty("user.home");
+			filePath = userHome + File.separator + "Desktop" + File.separator
+					+ "Test_Android" + File.separator + "Book.xlsx";
+			
+		}else {			
+			String userHome = System.getProperty("user.home");
+			filePath = userHome + File.separator + "Desktop" + File.separator
+					+ "Test_Android" + File.separator + "Book.xlsx";
+			
+		}
+		
+		
 		File inputStream = new File(filePath);
 		System.out.println("file parh: "+inputStream);
 		Workbook workbook = new XSSFWorkbook(inputStream);
