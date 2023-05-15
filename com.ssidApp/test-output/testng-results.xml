@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-28T14:08:54 IST" name="Default suite" finished-at="2023-04-28T14:09:16 IST" duration-ms="22488">
+  <suite started-at="2023-05-14T23:41:08 IST" name="Default suite" finished-at="2023-05-14T23:41:27 IST" duration-ms="18817">
     <groups>
     </groups>
-    <test started-at="2023-04-28T14:08:54 IST" name="Default test" finished-at="2023-04-28T14:09:16 IST" duration-ms="22488">
-      <class name="com.ssid.base.Base">
-        <test-method is-config="true" signature="Excel()[pri:0, instance:com.ssid.base.Base@79e4c792]" started-at="2023-04-28T14:08:54 IST" name="Excel" finished-at="2023-04-28T14:09:00 IST" duration-ms="6522" status="PASS">
+    <test started-at="2023-05-14T23:41:08 IST" name="Default test" finished-at="2023-05-14T23:41:27 IST" duration-ms="18817">
+      <class name="com.ssid.test.didCreation.DidCreation">
+        <test-method is-config="true" signature="Excel()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-14T23:41:08 IST" name="Excel" finished-at="2023-05-14T23:41:12 IST" duration-ms="3175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Excel -->
-        <test-method signature="mailNesia()[pri:0, instance:com.ssid.base.Base@79e4c792]" started-at="2023-04-28T14:09:00 IST" name="mailNesia" finished-at="2023-04-28T14:09:16 IST" duration-ms="15929" status="PASS">
+        <test-method signature="didCreation()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-14T23:41:12 IST" name="didCreation" finished-at="2023-05-14T23:41:27 IST" duration-ms="15531" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mailNesia -->
-      </class> <!-- com.ssid.base.Base -->
+        </test-method> <!-- didCreation -->
+      </class> <!-- com.ssid.test.didCreation.DidCreation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
