@@ -105,7 +105,7 @@ public class platform {
 			}	
 		}catch(Exception e) {
 			
-			filePath = "/com.ssidApp/src/main/resources/Book.xlsx";
+			filePath = "./Book.xlsx";
 		}
 			
 		File inputStream = new File(filePath);
