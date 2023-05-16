@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ssid.test.keyRotation.KeyRotation">
+      <class name="com.ssid.test.didCreation.DidCreation">
         <methods>
-          <include name="setMnemonics"/>
+          <include name="didCreation"/>
           <include name="Excel"/>
         </methods>
-      </class> <!-- com.ssid.test.keyRotation.KeyRotation -->
+      </class> <!-- com.ssid.test.didCreation.DidCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
