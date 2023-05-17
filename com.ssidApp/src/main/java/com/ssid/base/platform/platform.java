@@ -1,7 +1,12 @@
 package com.ssid.base.platform;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -91,7 +96,7 @@ public class platform {
 		os = System.getProperty("os.name");
 		os = os.replaceAll("[^a-zA-Z]", "");
 		System.out.println("os: "+os);
-		File file = new File("/com.ssidApp/src/main/resources/Book.xlsx");
+		
 		if (os.equals("Windows")) {
 			String userHome = System.getProperty("user.home");
 			filePath = userHome + File.separator + "OneDrive" + File.separator + "Desktop" + File.separator
@@ -100,13 +105,22 @@ public class platform {
 		}else {			
 			String userHome = System.getProperty("user.home");
 			filePath = userHome + File.separator + "Desktop" + File.separator
-					+ "Test_Android" + File.separator + "Book.xlsx";
-			
+					+ "Test_Android" + File.separator + "Book.xlsx";	
 		}
-			
-		File inputStream = new File(filePath);
-		System.out.println("file parh: "+inputStream);
-		Workbook workbook = new XSSFWorkbook(inputStream);
+		Workbook workbook;
+		try {
+			File file = new File(filePath);
+			System.out.println("file parh: "+file);
+			workbook = new XSSFWorkbook(file);
+		}catch(Exception e) {
+			System.out.println("No file found");
+			InputStream inputstream = platform.class.getClassLoader()
+					.getResourceAsStream("Book.xlsx");
+			System.out.println("file parh: "+inputstream);
+			workbook = new XSSFWorkbook(inputstream);
+		}
+		//Workbook workbook;
+		
 		Sheet sheet1 = workbook.getSheetAt(0);
 		ap = sheet1.getRow(1).getCell(6).getStringCellValue();
 		acType = sheet1.getRow(3).getCell(6).getStringCellValue();
