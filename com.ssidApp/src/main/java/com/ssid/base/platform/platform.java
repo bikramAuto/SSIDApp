@@ -92,21 +92,16 @@ public class platform {
 		os = os.replaceAll("[^a-zA-Z]", "");
 		System.out.println("os: "+os);
 		File file = new File("/com.ssidApp/src/main/resources/Book.xlsx");
-		try {
-			if (os.equals("Windows")) {
-				String userHome = System.getProperty("user.home");
-				filePath = userHome + File.separator + "OneDrive" + File.separator + "Desktop" + File.separator
-						+ "Test_Android" + File.separator + "Book.xlsx";
-				
-			}else {			
-				String userHome = System.getProperty("user.home");
-				filePath = userHome + File.separator + "Desktop" + File.separator
-						+ "Test_Android" + File.separator + "Book.xlsx";
-				
-			}	
-		}catch(Exception e) {
+		if (os.equals("Windows")) {
+			String userHome = System.getProperty("user.home");
+			filePath = userHome + File.separator + "OneDrive" + File.separator + "Desktop" + File.separator
+					+ "Test_Android" + File.separator + "Book.xlsx";
 			
-			filePath = "./Book.xlsx";
+		}else {			
+			String userHome = System.getProperty("user.home");
+			filePath = userHome + File.separator + "Desktop" + File.separator
+					+ "Test_Android" + File.separator + "Book.xlsx";
+			
 		}
 			
 		File inputStream = new File(filePath);
