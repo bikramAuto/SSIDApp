@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-16T13:07:44 IST" name="Default suite" finished-at="2023-05-16T13:07:45 IST" duration-ms="1084">
+  <suite started-at="2023-05-17T21:52:00 IST" name="Default suite" finished-at="2023-05-17T21:52:01 IST" duration-ms="1246">
     <groups>
     </groups>
-    <test started-at="2023-05-16T13:07:44 IST" name="Default test" finished-at="2023-05-16T13:07:45 IST" duration-ms="1084">
+    <test started-at="2023-05-17T21:52:00 IST" name="Default test" finished-at="2023-05-17T21:52:01 IST" duration-ms="1246">
       <class name="com.ssid.test.didCreation.DidCreation">
-        <test-method is-config="true" signature="Excel()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-16T13:07:44 IST" name="Excel" finished-at="2023-05-16T13:07:45 IST" duration-ms="976" status="FAIL">
+        <test-method is-config="true" signature="Excel()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-17T21:52:00 IST" name="Excel" finished-at="2023-05-17T21:52:01 IST" duration-ms="1159" status="FAIL">
           <exception class="org.apache.poi.openxml4j.exceptions.InvalidOperationException">
             <message>
-              <![CDATA[Can't open the specified file input stream from file: 'C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx']]>
+              <![CDATA[Can't open the specified file input stream from file: '\src\main\resources\Book.xlsx']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx'
+              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: '\src\main\resources\Book.xlsx'
 at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:188)
 at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:175)
 at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:282)
 at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:191)
 at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:310)
-at com.ssid.base.platform.platform.Excel(platform.java:113)
+at com.ssid.base.platform.platform.Excel(platform.java:104)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -44,7 +44,7 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.FileNotFoundException: C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx (The system cannot find the file specified)
+Caused by: java.io.FileNotFoundException: \src\main\resources\Book.xlsx (The system cannot find the path specified)
 at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
@@ -56,19 +56,19 @@ at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Excel -->
-        <test-method signature="didCreation()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-16T13:07:45 IST" name="didCreation" finished-at="2023-05-16T13:07:45 IST" duration-ms="0" status="SKIP">
+        <test-method signature="didCreation()[pri:0, instance:com.ssid.test.didCreation.DidCreation@3b0090a4]" started-at="2023-05-17T21:52:01 IST" name="didCreation" finished-at="2023-05-17T21:52:01 IST" duration-ms="0" status="SKIP">
           <exception class="org.apache.poi.openxml4j.exceptions.InvalidOperationException">
             <message>
-              <![CDATA[Can't open the specified file input stream from file: 'C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx']]>
+              <![CDATA[Can't open the specified file input stream from file: '\src\main\resources\Book.xlsx']]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx'
+              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: '\src\main\resources\Book.xlsx'
 at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:188)
 at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:175)
 at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:282)
 at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:191)
 at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:310)
-at com.ssid.base.platform.platform.Excel(platform.java:113)
+at com.ssid.base.platform.platform.Excel(platform.java:104)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,7 +93,7 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.FileNotFoundException: C:\Users\colbi\OneDrive\Desktop\Test_Android\Book.xlsx (The system cannot find the file specified)
+Caused by: java.io.FileNotFoundException: \src\main\resources\Book.xlsx (The system cannot find the path specified)
 at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
