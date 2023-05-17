@@ -91,6 +91,7 @@ public class platform {
 		os = System.getProperty("os.name");
 		os = os.replaceAll("[^a-zA-Z]", "");
 		System.out.println("os: "+os);
+		File file = new File("/com.ssidApp/src/main/resources/Book.xlsx");
 		try {
 			if (os.equals("Windows")) {
 				String userHome = System.getProperty("user.home");
